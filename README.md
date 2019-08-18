@@ -2,18 +2,30 @@
 PHP_Hooks is a simple class that help to make a scalable php software, like plugins,
 inspired from Wordpress
 
-'''
+# Useful Functions:
+```
+- add_action($name, $function, $priority = 10)
+- do_action($name, $arguments = NULL)
+- remove_action($name, $function, $priority = 10)
+- add_filter($name, $function, $priority = 10)
+- do_filter($name, $arguments)
+- remove_filter($name, $function, $priority = 10)
+```
 
+# note:
+The filters function have to return something.
+
+```
 function doSomething(User $user)
 {
     // Do Something here with user class
 }
 
 add_action(doSomething);
-'''
+```
 
 Somewhere in your code fire the event as follow
-'''
+```
 // EventNamehere like "on.login" or Event::OnLogin
 do_action("EventNameHere", $UserClass);
-'''
+```
