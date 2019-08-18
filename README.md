@@ -1,6 +1,6 @@
 # PHP_Hooks
 PHP_Hooks is a simple class that help to make a scalable php software, like plugins,
-inspired from Wordpress
+inspired from Wordpress & I hope that help someone :D
 
 ## Useful Functions:
 ```
